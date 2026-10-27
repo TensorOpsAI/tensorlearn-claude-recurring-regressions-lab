@@ -1,0 +1,31 @@
+{
+  "key": "recurring-regressions",
+  "title": "Stop the recurring regressions",
+  "minutes": 30,
+  "chapter": "Chapter 1 \u00b7 Working context",
+  "writeAllow": [
+    "**"
+  ],
+  "practice": [
+    "recurring-regressions.practice"
+  ],
+  "needsAI": true,
+  "brief": "Claude keeps reintroducing an old customer-code format and removing a cache, even after those changes were corrected. Several tasks appeared fixed, but the next session repeats the mistakes. Find and fix the cause, then demonstrate that a new session completes the next task correctly.",
+  "acceptance": [
+    "A new session preserves the current customer-code contract and required caching.",
+    "The diagnosis explains the recurring cause and cites repository evidence.",
+    "The correction preserves useful project guidance and avoids a blanket deletion.",
+    "Authorization and the full suite remain correct."
+  ],
+  "recipeIndex": 3,
+  "writeDeny": [
+    "exercise.json",
+    "practice.mjs",
+    "fixtures/**",
+    "tests/instructor/**",
+    ".github/**",
+    ".mcp.json",
+    ".claude/settings.json",
+    ".claude/settings.local.json"
+  ]
+}
